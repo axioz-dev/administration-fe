@@ -7,9 +7,10 @@ function Loader() {
     <div className="flex w-screen h-screen bg justify-center items-center">
       <Stack sx={{ color: "grey.500" }} spacing={2} direction="row">
         <CircularProgress color="secondary" />
-        <CircularProgress color="success" />
-        <CircularProgress color="inherit" />
+        {/* <CircularProgress color="success" /> */}
+        {/* <CircularProgress color="inherit" /> */}
       </Stack>
+      <h6 className="ml-6">Loading</h6>
     </div>
   );
 }

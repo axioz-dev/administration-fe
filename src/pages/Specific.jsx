@@ -28,9 +28,9 @@ function Specific() {
       </div>
     );
   return (
-    <div className="p-6 ">
+    <div className="p-6 grid md:grid-cols-2 xl:grid-cols-3">
       {data.map((item) => (
-        <div className="p-4 border border-4 border-black m-4">
+        <div className="p-4  border-4 border-black m-4 rounded-2xl bg-[#acdcee]">
           {item.userData && item.userData[0] && (
             <div className="text-xl font-bold text-center">
               {item.userData[0].collegeName}
@@ -38,7 +38,7 @@ function Specific() {
           )}
           {item[eventid] &&
             item[eventid].map((item) => (
-              <div className="flex gap-4">
+              <div className="flex  flex-col">
                 <p className="text-base m-1">
                   <span className="text-sm font-semibold opacity-50 mr-2 ">
                     Name:
