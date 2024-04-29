@@ -24,7 +24,7 @@ const router = createBrowserRouter(
   ])
 );
 
-axios.defaults.baseURL = "http://localhost:3000/";
+axios.defaults.baseURL = "https://adminstration.onrender.com/";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
