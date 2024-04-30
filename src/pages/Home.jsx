@@ -5,13 +5,13 @@ function Home() {
   const navigate = useNavigate();
   return (
     <div>
-      <h1 className="text-5xl text-blue-500 text-center p-4 ">OPTIONS</h1>
-      <div className="flex justify-center items-center w-screen p-10">
+      <h1 className="text-5xl text-blue-500 text-center p-4">Team Registrations</h1>
+      <div className="flex justify-center items-center w-screen p-10 ">
         <Button variant="outlined" onClick={() => navigate("/all-data")}>
           All Data
         </Button>
       </div>
-      <div className="flex justify-center items-center w-screen p-10 gap-8">
+      <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 justify-center items-center w-screen p-10 gap-8">
         <Button variant="outlined" onClick={() => navigate("/specific/quiz")}>
           quiz
         </Button>
